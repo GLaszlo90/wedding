@@ -1,0 +1,242 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-image: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png");
+  text-align: center;
+  color: #444349;
+  line-height: 1.5;
+}
+.cover{
+  background-image: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg");
+  height:100vh;
+  width: 100%;
+  background-position-x: 70%;
+  background-position-y: center;
+  background-size: cover;
+  display: table;
+}
+.text-box{
+  display: table-cell;
+  vertical-align: middle;
+}
+.content{
+  color:hsla(0,0%,100%,.9);
+  background-color: hsla(100,0%,0%,.5);
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.25rem;
+  letter-spacing: .15rem;
+  padding:10px;
+  line-height: 1.5;
+}
+.content p{
+  font-size: 1.25rem;
+}
+h1,h2{
+  font-family: 'Great Vibes', cursive;
+}
+h1{
+  font-size: 3.15rem;
+  color: #d2ba87;
+  letter-spacing: 0;
+}
+.content p::after{
+  display: block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 12.5rem;
+  margin:0.5rem auto;
+}
+.content span::before, .content span::after{
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 1.5rem;
+  margin:0.5rem;
+  vertical-align: middle;
+}
+h2{
+  font-size: 3rem;
+}
+h3{
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Libre Baskerville', serif;
+}
+.locations h2,h3,img{
+  margin-bottom: 1.5rem;
+}
+.locations{
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: .5rem 1rem;
+  font-family: 'Muli', sans-serif;
+}
+.locations img{
+  height: 7.5rem;
+}
+.boxes .street::after{
+  display: block;
+  content: "";
+  background-color: #444349;
+  width: 25vw;
+  height: 0.18rem;
+  margin: 1.5rem auto;
+}
+.program{
+  background-color: hsla(100,0%,0%,.6);
+  color: #d2ba87;
+  padding: 0.5rem 1rem;
+  margin-top:1.5rem;
+  font-family: 'Muli', sans-serif;
+}
+.program h2{
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.program blockquote{
+  font-style: italic;
+  font-size: 1.125rem;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+.program li{
+  text-align: left;
+  font-size: 1.125rem;
+}
+.program ul{
+  margin-bottom: 1.5rem;
+  letter-spacing: .025rem;
+}
+.gifts{
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: .5rem 1rem;
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 0;
+}
+.gifts img{
+  height: 7.5rem;
+}
+.gifts h2{
+  margin-bottom: 1.5rem;
+}
+.gifts h3,p{
+  font-size: 1.125rem;
+  font-weight: normal;
+}
+.qa{
+    background: hsla(100,0%,0%,.6);
+    color: #d2ba87;
+    width: 100%;
+    text-align: center;
+    margin: 1.5rem auto;
+    padding: 0.5rem 1rem;
+    font-family: 'Libre Baskerville', serif;
+}
+.qa h2{
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.qa h3{
+  font-weight: normal;
+}
+.qa p{
+  font-size: 1.125rem;
+  font-family: 'Muli', sans-serif;
+  text-align: left;
+}
+.q{
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.a{
+  margin-bottom: 1.5rem;
+}
+.part::after{
+  content: "";
+  display: block;
+  height: .1875rem;
+  width: 50vw;
+  margin: 1.5rem auto;
+  background-color: #d2ba87;
+}
+a{
+  text-decoration: none;
+  color: #bd806e;
+  display:inline-block;
+}
+.contact{
+  font-family: 'Libre Baskerville', serif;
+  margin: 1.5rem auto;
+  padding: 0.5rem 1rem;
+}
+.contact h2{
+  margin-bottom: 1.5rem;
+}
+.contact p{
+  margin-bottom: 1.5rem;
+}
+footer{
+  width: 100%;
+  display: table;
+  height: 10vh;
+  background-color: #606060;
+  text-align: center;
+  color:#fff;
+  padding: 0.5rem 1rem;
+  font-family: 'Muli', sans-serif;
+}
+footer p{
+  display: table-cell;
+  font-size: 0.875rem;
+  vertical-align: middle;
+}
+@media (min-width: 768px){
+  .text-box p{
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    letter-spacing: .15rem;
+  }
+  .text-box h1{
+    font-size: 7rem;
+  }
+  .content{
+    margin: 0 auto;
+    padding: 1.25rem;
+    border-radius: 4px;
+    width: 50%;
+  }
+  .boxes{
+    display: inline-block;
+    width: 30%;
+    padding: 1.5rem;
+    margin: 0.5rem;
+  }
+ .boxes .street::after{
+   display: none;
+ }
+ .program .wraper{
+   width: 30vw;
+   margin: 0 auto;
+ }
+ .qa .part::after{
+   display: none;
+ }
+ .qa .part{
+   width: 30%;
+   display: inline-block;
+   vertical-align: top;
+   padding: 1.5rem;
+   margin: .5rem;
+   text-align: left;
+ }
+a{
+  display: inline;
+}
+}
